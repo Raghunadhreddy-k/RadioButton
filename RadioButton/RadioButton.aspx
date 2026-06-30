@@ -15,8 +15,8 @@
                         <asp:Label ID="lblGender" runat="server" Text="Gender"></asp:Label>
                     </td>
                     <td>
-                        <asp:RadioButton ID="rbtMale" runat="server" Checked="true"  Text="Male" GroupName="Gender" />
-                        <asp:RadioButton ID="rbtFemale" runat="server" Text="Female" GroupName="Gender" />
+                        <asp:RadioButton ID="rbtMale" runat="server" Checked="true" AutoPostBack="true"  Text="Male" GroupName="Gender" OnCheckedChanged="rbtMale_CheckedChange" />
+                        <asp:RadioButton ID="rbtFemale" runat="server" AutoPostBack="true" Text="Female" GroupName="Gender" OnCheckedChanged="bntFemale_CheckedChamge" />
                     </td>
                 </tr>
                 <tr>

@@ -26,5 +26,21 @@ namespace RadioButton
             }
 
         }
+
+        protected void rbtMale_CheckedChange(object sender, EventArgs e)
+        {
+            if(rbtMale.Checked == true)
+            {
+                lblMsg.Text = "You selected" + rbtMale.Text;
+            }
+        }
+
+        protected void bntFemale_CheckedChamge(object sender, EventArgs e)
+        {
+            if(rbtFemale.Checked == true)
+            {
+                lblMsg.Text = "You selected " + rbtFemale.Text;
+            }
+        }
     }
 }
